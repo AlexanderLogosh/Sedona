@@ -1,0 +1,27 @@
+.main-nav {
+}
+
+.main-nav__toggle {
+	font-size: 0;
+}
+
+.main-nav__wrapper {
+	background: $bg-blue;
+}
+
+.main-nav__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.main-nav__item {
+	padding: 8px 0;
+	border-bottom: 1px solid gray;
+	@include main-nav-text;
+
+	& a {
+		display: block;
+	}
+}
+

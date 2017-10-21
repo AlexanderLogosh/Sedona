@@ -1,0 +1,9 @@
+.btn {
+	display: inline-block;
+	width: 280px;
+	padding: 16px 0;
+	text-align: center;
+	text-decoration: none;
+	background: $bg-blue;
+	@include fonts-rules(21px, 26px, white, bold)
+}

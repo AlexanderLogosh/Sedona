@@ -1,0 +1,16 @@
+.page-footer {
+	padding-top: 32px;
+	text-align: center;
+}
+
+.page-footer__teg {
+	display: inline-block;
+	margin-bottom: 22px; 
+	@include fonts-rules(21px, 26px, black, bold);
+}
+
+.page-footer__coopyright {
+	padding-top: 43px;
+	padding-bottom: 20px;
+	@include fonts-rules(14px, 26px, black);
+}

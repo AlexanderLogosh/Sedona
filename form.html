@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona</title>
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="page-header__logo">
+			<img src="" alt="">
+		</div>
+		<nav class="main-nav">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="index.html">Главная</a></li>
+					<li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+					<li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="page-header__title"></div>
+	</header>
+	<main>
+		<article class="page-title">
+			<h1>Оставьте свой отзыв</h1>
+			<p>Помогите нашим отелям стать лучше!<br>оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</p>
+		</article>
+		<form class="review-form" action="https://echo.htmlacademy.ru" method="post">
+			<fieldset class="review-form__name">
+				<legend>Представьтесь, пожалуйста:</legend>
+				<label>
+					<span>Имя:</span><input type="text" name="username" value="Петр">
+				</label>
+				<label>
+					<span>Фамилия:</span><input type="text" name="last-name" value="Иванов">
+				</label>
+				<label>
+					<span>Отчество:</span><input type="text" name="patronymic" value="Александрович">
+				</label>
+			</fieldset>
+
+			<fieldset class="review-form__contacts">
+				<legend>Контактная информация:</legend>
+				<label>
+					<span>Контактный телефон:</span><br>
+					<input class="review-form__tel" type="tel" name="tel" value="Введите телефон">
+				</label>
+				<label>
+					<span>Электронная почта:</span><br>
+					<input class="review-form__mail" type="email" name="mail" value="Введите e-mail">
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Ваше общее впечатление:</legend>
+				<label>
+					<input class="review-form__radio" type="radio" name="impression" value="Скорее положительное">
+					<span class="review-form__radio-indicator"></span>
+					<span>Скорее положительное</span>
+				</label>
+				<label>
+					<input class="review-form__radio" type="radio" name="impression" value="Скорее отрицательное">
+					<span class="review-form__radio-indicator"></span>
+					<span>Скорее отрицательное</span>
+				</label>
+				<label>
+					<input class="review-form__radio" type="radio" name="impression" value="Затрудняюсь ответить">
+					<span class="review-form__radio-indicator"></span>
+					<span>Затрудняюсь ответить</span>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Посещяемые достопримечательности:</legend>
+				<label>
+					<input class="review-form__checkbox" type="checkbox" name="places" value="Мост Дьявола">
+					<span class="review-form__checkbox-indicator"></span>
+					<span>Мост Дьявола</span>
+				</label>
+				<label>
+					<input class="review-form__checkbox" type="checkbox" name="places" value="Слайд-парк">
+					<span class="review-form__checkbox-indicator"></span>
+					<span>Слайд-парк</span>
+				</label>
+				<label>
+					<input class="review-form__checkbox" type="checkbox" name="places" value="Гора-Колокол">
+					<span class="review-form__checkbox-indicator"></span>
+					<span>Гора-Колокол</span>
+				</label>
+				<label>
+					<input class="review-form__checkbox" type="checkbox" name="places" value="Красные скалы">
+					<span class="review-form__checkbox-indicator"></span>
+					<span>Красные скалы</span>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Опишите свои эмоции</legend>
+				<textarea name="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+			</fieldset>
+			<button class="btn" type="summit">Отправить отзыв</button>
+		</form>
+	</main>
+	<footer class="page-footer">
+		<b>#VISITSEDONA</b>
+		<div class="social-btns">
+			<a href="#" class="social-btns__item">Twiter</a>
+			<a href="#" class="social-btns__item">Facebook</a>
+			<a href="#" class="social-btns__item">Youtube</a>
+		</div>
+		<div class="page-footer__coopyright">
+			<span>Разработано</span>
+			<img src="" alt="">
+		</div>
+	</footer>
+</body>
+</html>

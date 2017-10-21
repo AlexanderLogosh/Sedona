@@ -1,0 +1,13 @@
+.social-btns__item {
+	display: inline-block;
+	margin: 0;
+	margin-right: 6px;
+	width: 46px;
+	height: 48px;
+	font-size: 0;
+	background: $bg-blue;
+}
+
+.social-btns__item--youtube {
+	margin-right: 0;
+}

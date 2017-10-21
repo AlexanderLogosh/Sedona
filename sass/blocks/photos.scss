@@ -1,0 +1,21 @@
+.photos__post {
+	padding: 22px 20px;
+	border-top: 1px solid #e5e5e5;
+	@include fonts-rules(14px, 24px, black, bold)
+}
+
+.photos__signature {
+	
+}
+
+.photos__author {
+	text-transform: none;
+	font-weight: normal;
+}
+
+.photos__like {
+	display: block;
+	padding-left: 38px;
+	color: black;
+	text-decoration: none;
+}

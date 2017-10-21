@@ -1,0 +1,11 @@
+.page-title {
+	text-align: center;
+
+	& h1 {
+		@include big-text;
+	}
+
+	p {
+		@include fonts-rules(14px, 26px, $color-litle-text, normal);
+	}
+}
