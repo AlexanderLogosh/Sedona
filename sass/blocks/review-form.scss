@@ -1,0 +1,71 @@
+.review-form {
+	fieldset {
+		padding: 0;
+		border: none;
+		border-bottom: 1px solid black;
+	}
+
+	legend {
+		padding: 0;
+		padding-top: 18px;
+		padding-bottom: 21px;
+		margin: 0;
+		@include big-text();
+	}
+
+	label {
+		display: block;
+		margin-bottom: 24px;
+	}
+}
+
+.review-form__name,
+.review-form__contacts {
+	span {
+		@include fonts-rules(14px, 26px, $color-litle-text, 400);
+	}
+
+	input {
+		padding: 16px 21px;
+		border: none;
+		background: $bg-inputs;
+		@include big-text();
+		text-transform: none;
+	}
+}
+
+.review-form__name {
+	span {
+		padding-right: 20px;
+	}
+	
+	input {
+		width: 190px;
+	}
+}
+
+.review-form__first-name {
+		width: 230px;
+	}
+
+
+.review-form__contacts {
+	legend {
+		padding-bottom: 13px;
+	}
+	span {
+		display: inline-block;
+		padding: 7px 21px;
+	}
+}
+
+
+.review-form__experience,
+.review-form__places {
+	@include big-text;
+	text-transform: none;
+}
+
+.review-form__emotions {
+	text-align: center;
+}

@@ -1,12 +1,85 @@
 .main-nav {
+	height: 59px;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+	@media (min-width: 768px) {
+		height: 56px;
+	}
 }
 
-.main-nav__toggle {
+.main-nav::before {
+	position: absolute;
+	content: "";
+	top: 223px;
+	left: 110px;
+	width: 102px;
+	height: 83px;
+	background-image: url(../img/content/mobile/logo-sedona-mobile.svg);
+	z-index: 2;
+
+	@media (min-width: 768px) {
+		top: 0;
+		left: 333px;
+		background-image: url(../img/logo-sedona-tablet.svg);
+	}
+
+	@media (min-width: 1200px) {
+		left: 482px;
+		width: 188px;
+		height: 96px;
+		background-image: url(../img/logo-sedona-desktop.svg);
+	}
+
+}
+
+.main-nav__toggle,
+.main-nav__toggle::before,
+.main-nav__toggle::after {
+	position: relative;
+	top: 28px;
+	left: 278px;
+	height: 3px;
+	border-top: 1px solid #c0d9e8;
+	border-bottom: 1px solid #c0d9e8;
+	width: 23px;
+	background: $bg-blue;
 	font-size: 0;
+
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+
+.main-nav__toggle::before {
+	position: absolute;
+	content: "";
+	height: 4px;
+	border: none;
+	top: -9px;
+	left: 0;
+}
+
+.main-nav__toggle::after {
+	position: absolute;
+	content: "";
+	height: 4px;
+	border: none;
+	top: 8px;
+	left: 0;
 }
 
 .main-nav__wrapper {
+	position: absolute;
+	top: 0;
+	width: 100%;
 	background: $bg-blue;
+
+	@media (min-width: 768px) {
+		position: relative;
+		background: white;
+		color: black;
+	}
 }
 
 .main-nav__list {
@@ -16,12 +89,78 @@
 }
 
 .main-nav__item {
-	padding: 8px 0;
+	padding: 0;
+	margin: 0;
 	border-bottom: 1px solid gray;
 	@include main-nav-text;
 
+	@media (min-width: 768px) {
+		display: inline-block;
+		border: none;
+		margin: 0;
+
+		&:first-child {
+			float: left;
+			margin: 0 77px 0 50px;
+		}
+
+		&:nth-child(2) {
+			float: left;
+			margin: 0;
+		}
+		
+		&:nth-child(3) {
+			float: left;
+			margin: 0;
+			margin-left: 155px;
+		}
+
+		&:last-child {
+			float: right;
+			margin: 0;
+			margin-right: 26px;
+		}
+  }
+
+	@media (min-width: 1200px) {
+		display: inline-block;
+		border: none;
+		margin: 0;
+
+		&:first-child {
+			float: left;
+			margin: 0 162px 0 92px;
+		}
+
+		&:nth-child(2) {
+			float: left;
+			margin: 0;
+		}
+		
+		&:nth-child(3) {
+			float: left;
+			margin: 0;
+			margin-left: 328px;
+		}
+
+		&:last-child {
+			float: right;
+			margin: 0;
+			margin-right: 70px;
+		}
+	}
+
 	& a {
+		padding: 7.5px 0;
 		display: block;
+		@include main-nav-text;
+
+		@media (min-width: 768px) {
+			padding: 15px 0;
+			color: black;
+			font-size: 14px;
+			line-height: 26px;
+		}
 	}
 }
 

@@ -6,10 +6,10 @@
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body class="container">
 	<header class="page-header">
 		<div class="page-header__logo">
-			<img src="" alt="">
+			<img src="img/decorative/bg-back-mobile@1x.jpg" alt="main-photo" width="320">
 		</div>
 		<nav class="main-nav">
 			<button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -29,11 +29,11 @@
 			<h1>Оставьте свой отзыв</h1>
 			<p>Помогите нашим отелям стать лучше!<br>оставьте отзыв о них, а также о<br>посещенных вами<br>достопримечательностях</p>
 		</article>
-		<form class="review-form" action="https://echo.htmlacademy.ru" method="post">
+		<form class="review-form" action="" method="post">
 			<fieldset class="review-form__name">
 				<legend>Представьтесь, пожалуйста:</legend>
 				<label>
-					<span>Имя:</span><input type="text" name="username" value="Петр">
+					<span>Имя:</span><input class="review-form__first-name" type="text" name="username" value="Петр">
 				</label>
 				<label>
 					<span>Фамилия:</span><input type="text" name="last-name" value="Иванов">
@@ -46,16 +46,16 @@
 			<fieldset class="review-form__contacts">
 				<legend>Контактная информация:</legend>
 				<label>
-					<span>Контактный телефон:</span><br>
+					<span>Контактный телефон:</span>
 					<input class="review-form__tel" type="tel" name="tel" value="Введите телефон">
 				</label>
 				<label>
-					<span>Электронная почта:</span><br>
+					<span>Электронная почта:</span>
 					<input class="review-form__mail" type="email" name="mail" value="Введите e-mail">
 				</label>
 			</fieldset>
 
-			<fieldset>
+			<fieldset class="review-form__experience">
 				<legend>Ваше общее впечатление:</legend>
 				<label>
 					<input class="review-form__radio" type="radio" name="impression" value="Скорее положительное">
@@ -74,7 +74,7 @@
 				</label>
 			</fieldset>
 
-			<fieldset>
+			<fieldset class="review-form__places">
 				<legend>Посещяемые достопримечательности:</legend>
 				<label>
 					<input class="review-form__checkbox" type="checkbox" name="places" value="Мост Дьявола">
@@ -98,7 +98,7 @@
 				</label>
 			</fieldset>
 
-			<fieldset>
+			<fieldset class="review-form__emotions">
 				<legend>Опишите свои эмоции</legend>
 				<textarea name="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
 			</fieldset>

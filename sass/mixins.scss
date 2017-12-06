@@ -1,4 +1,4 @@
-@mixin fonts-rules($size: 0, $height: 0, $color: 0, $weight: normal) {
+@mixin fonts-rules($size: 0, $height: 0, $color: 0, $weight: 400) {
 	font-size: $size;
 	line-height: $height;
 	color: $color;
@@ -9,14 +9,9 @@
 	font-size: 18px;
 	line-height: 40px;
 	font-weight: bold;
-	
-	text-align: center;
-
-	& a {
-		color: white;
-		text-decoration: none;
-	}
-	
+	color: white;
+	text-decoration: none;
+	text-align: center;	
 }
 
 @mixin big-text($color: black, $weight: bold) {
@@ -24,5 +19,17 @@
 	line-height: 26px;
 	color: $color;
 	font-weight: $weight;
+
+	@media (min-width: 768px) {
+		font-size: 21px;
+	}
+}
+
+@mixin clearfix() {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
 }
 

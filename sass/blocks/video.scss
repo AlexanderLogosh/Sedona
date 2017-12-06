@@ -1,0 +1,12 @@
+.video {
+	text-align: center;
+	
+	p {
+		@include fonts-rules(14px, 24px, $color-litle-text)
+	}
+}
+
+.video-title {
+	@include big-text();
+}
+

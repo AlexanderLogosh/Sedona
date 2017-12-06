@@ -1,36 +1,71 @@
-
-.reazons__item {
-	text-align: center;
-
-  p {
-		padding: 0;
-		margin: 0;
-		@include fonts-rules(14px, 21px);
+.reazons {
+	font-size: 0;
+}
+@media (min-width: 768px) {
+	.reazons__item {
+		height: 256px;
 	}
 }
 
 .reazons__item--blue {
-	padding-top: 40px;
-	background:  $bg-blue;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 38px 10px 300px;
+	text-align: center;
 	color: white;
+}
 
-	img {
-		margin-top: 40px;
+.reazons__item--first {
+	padding-top: 56px;
+	background: $bg-blue url(../img/content/mobile/main-city-mobile@1x.jpg) no-repeat;
+	background-size: contain;
+	background-position: left 0 bottom 0;
+
+	@media (min-width: 768px) {
+		padding: 46px 545px 0 35px;
+		background: $bg-blue url(../img/main-city-tablet@1x.jpg) no-repeat;
+		background-size: contain;
+		background-position: right 0 bottom 0;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 52px 870px 0 70px;
+		background: $bg-blue url(../img/main-city-desktop@2x.jpg) no-repeat;
+		background-size: 800px auto;
+		background-position: right 0 bottom -74px;
 	}
 }
 
-.reazons__item--gray {
-	padding-top: 28px;
-	padding-bottom: 28px;
-	border-bottom: 1px solid gray;
-	background:  $bg-gray;
-	color: $color-litle-text;
+.reazons__item--second {
+	background: $bg-blue url(../img/content/mobile/main-bridge-mobile@1x.jpg) no-repeat;
+	background-size: contain;
+	background-position: left 0 bottom 0;
+
+	@media (min-width: 768px) {
+		padding: 46px 35px 0 545px;
+		background: $bg-blue url(../img/main-bridge-tablet@1x.jpg) no-repeat;
+		background-size: contain;
+		background-position: left 0 bottom 0;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 46px 70px 0 870px;
+		background: $bg-blue url(../img/photo-bridge-desktop@2x.jpg) no-repeat;
+		background-size: 800px auto;
+		background-position: left 0 bottom -68px;
+	}
 }
+
+
 
 .reazons__title {
 	padding: 0;
 	margin: 0;
 	@include big-text(black);
+
+	@media (min-width: 768px) {
+			padding: 0 8px;
+		}
 }
 
 .reazons__title--white {
@@ -40,15 +75,150 @@
 .reazons__number {
 	display: inline-block;
 	padding: 0;
-	margin: 9px 0 10px 0;
+	margin: 9px 0 15px 0;
 	@include fonts-rules(14px, 21px);
+
+	@media (min-width: 768px) {
+		margin: 9px 0 22px 0;
+	}
+
+	@media (min-width: 1200px) {
+		margin: 9px 0 22px 0;
+	}
 }
 
+.reazons__text {
+		padding: 0;
+		margin: 0;
+		@include fonts-rules(14px, 21px);
+	}
+
 .reazons__description {
+	padding: 30px 0 15px 0;
+	background: white;
+	text-align: left;
+	font-size: 0;
+
+	& p {
+		margin: 13px 0;
+		margin-bottom: 17px;
+		@include fonts-rules(13px, 21px, $color-litle-text);
+	}
+}
+
+
+.reazons__description-block {
+	position: relative;
+	padding: 6px 0;
 	padding-left: 70px;
 	padding-right: 40px;
-	background: white;
-	@include fonts-rules(14px, 21px, $color-litle-text);
-	text-align: left;
+
+	svg {
+		position: absolute;
+		right: 262px;
+		top: -4px;
+		fill: #81b3d2;
+	}
+}
+
+.reazons__description-block1 svg {
+	width: 39px;
+	height: 37px;
+}
+
+.reazons__description-block2 svg {
+	width: 32px;
+	height: 38px;
+}
+
+.reazons__description-block3 svg {
+	width: 40px;
+	height: 35px;
+}
+
+@media (min-width: 768px) {
+	.reazons__description {
+		padding: 0;
+		font-size: 0;
+
+		& p {
+			margin: 0;
+			margin-top: 21px;
+		}
+	}
+
+	.reazons__description-block  {
+		display: inline-block;
+		box-sizing: border-box;
+		width: 256px;
+		padding: 159px 30px 61px;
+		text-align: center;
+
+		svg {
+			left: 90px;
+			top: 59px;
+			width: auto;
+			height: auto;
+		}
+
+		.reazons__title {
+			font-size: 21px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.reazons__description-block  {
+		display: inline-block;
+		width: 400px;
+		padding: 159px 60px 83px;
+
+		svg {
+			left: 160px;
+			top: 59px;
+		}
+	}
+}
+
+
+
+
+.reazons__item--gray {
+	padding: 27px 0 26px;
+	background:  $bg-gray;
+	color: $color-litle-text;
+	text-align: center;
+	vertical-align: top;
+}
+
+.reazons__item--bottom-line {
+		border-bottom: 1px solid gray;
+}
+
+@media (min-width: 768px) {
+	.reazons__item--gray {
+		display: inline-block;
+		box-sizing: border-box;
+		width: 256px;
+		padding: 46px 35px;
+		border: none; 
+		hyphens: auto;
+	}
+}
+
+@media (min-width: 1200px) {
+	.reazons__item--gray {
+		display: inline-block;
+		box-sizing: border-box;
+		width: 400px;
+		padding: 46px 81px;
+		border: none; 
+		hyphens: auto;
+
+		.reazons__title {
+			padding: 0 30px;
+		}
+	}
 }
 

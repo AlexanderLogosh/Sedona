@@ -2,17 +2,14 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Sedona</title>
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<header class="page-header">
-		<div class="page-header__logo">
-			<img src="" alt="">
-		</div>
 		<nav class="main-nav">
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
 			<div class="main-nav__wrapper">
 				<ul class="main-nav__list">
 					<li class="main-nav__item"><a href="#">Главная</a></li>
@@ -21,59 +18,88 @@
 					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
 				</ul>
 			</div>
+			<div class="main-nav__toggle">Открыть меню</div>
 		</nav>
+		<div class="page-header__img"></div>
 		<div class="page-header__title  page-header__title--big-img"></div>
 	</header>
 	<main>
 		<article class="page-title">
-			<h1>СЕДОНА — небольшой<br>городок в АРИЗОНЕ,<br>заслуживающий большего!</h1>
-			<p>Рассмотрим 5 причин, по которым<br>Седона круче чем гранд каньон!</p>
+			<h1>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+			<p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
 		</article>
 		<section class="reazons">
-			<div class="reazons__item  reazons__item--blue">
+			<div class="reazons__item  reazons__item--blue reazons__item--first">
 				<h2 class="reazons__title reazons__title--white">Настоящий городок</h2>
 				<span class="reazons__number">№1</span>
-				<p>Седона не атракцион для туристов,<br>там течет своя жизнь</p>
-				<img src="photo-city@1x.png" alt="" width="320" height="260">
-				<div class="reazons__description">
-					<b class="reazons__description-img-1 reazons__title">Жилье</b>
+				<p class="reazons__text">Седона не атракцион для туристов, там течет своя жизнь</p>
+			</div>
+
+			<div class="reazons__description">
+				<div class="reazons__description-block reazons__description-block1">
+					<b class="reazons__title">Жилье</b>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-					<b class="reazons__description-img2 reazons__title">Сувениры</b>
+					<svg xmlns="http://www.w3.org/2000/svg" width="74.7" height="72.3" viewBox="0 0 74.695 72.346">
+			    	<path d="M29.5 65.3h16V41.4h-16v24zm13-2.9h-10v-18h10v18z"/>
+			    	<path d="M72.6 39.4l2.1-2-10-10V.4H51v13.2L37.3 0 0 37.4l2 2 8-7.8v37.8H6v3h63.8v-3h-5V31.6l7.8 7.8zM54 3.4h8v21.1l-8-8v-13zm8 66h-49V28.7L37.2 4.2 62 28.7v40.7z"/>
+			    	<path d="M29.8 27.2a7.8 7.8 0 1 0 15.5 0 7.8 7.8 0 0 0-15.5 0zm7.7-5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zM16.9 41.4h3v3.9h-3zM22.8 41.4h3v3.9h-3zM16.9 47.4h3v3.9h-3zM22.8 47.4h3v3.9h-3zM48.8 41.4h3v3.9h-3zM54.8 41.4h3v3.9h-3zM48.8 47.4h3v3.9h-3zM54.8 47.4h3v3.9h-3z"/>
+					</svg>
+				</div>
+				<div class="reazons__description-block reazons__description-block2">
+					<b class="reazons__title">Сувениры</b>
 					<p>Не только китайского, но и местного производства!</p>
-					<b class="reazons__description-img3 reazons__title">Еда</b>
+					<svg xmlns="http://www.w3.org/2000/svg" width="63" height="75.1" viewBox="0 0 63 75.084">
+    				<path d="M60.2 22.2H35.8c13.6-6.8 14.6-11 14.1-13.5-1.1-4-5.6-7-9.8-5.3-5.5 2-7 10.2-8.5 16.2-2-6-3.7-13.7-8-17.6a7.2 7.2 0 0 0-5.7-2c-4 .4-9.7 5.3-7.3 10.9 2.2 5.3 9.5 8.6 14.3 11.3H3A2.8 2.8 0 0 0 0 25.1v11.1c0 1.6 1.3 2.9 2.8 2.9h.3v36h57V39c1.6 0 2.9-1.3 2.9-2.8V25c0-1.6-1.3-2.9-2.8-2.9zM41.8 6c2-.3 4.9 1.3 5.1 3.1.4 2.8-3.3 5.2-5 6.4-2.5 1.7-4.8 2.6-7.1 4 .8-3.7 2.5-12.9 7-13.5zm-22.6 9.8C17 14.3 12.8 11.3 13 8c.1-3.5 5.6-6.4 8.7-3.8 3.8 3.3 5.6 11 7 16.4-3.2-1.6-6.3-2.8-9.4-4.9zm6 56.4H6v-33h19.1v33zm0-36H3V25.2h22.1v10.9zm10 36H28V25.2h7v47zm22 0H38v-33h19v33zm2.8-36H38V25.2h22v10.9z"/>
+					</svg>
+
+				</div>
+				<div class="reazons__description-block reazons__description-block3">
+					<b class="reazons__title">Еда</b>
 					<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="76.2" height="69" viewBox="0 0 76.166 68.959">
+    				<path d="M72 46H4.2C1.9 46 0 48 0 50.3v3.4C0 56.1 2 58 4.3 58h1v1A10 10 0 0 0 15 69h46A10 10 0 0 0 71 59v-1h1c2.3 0 4.2-2 4.2-4.3v-3.4c0-2.3-2-4.3-4.3-4.3zm-4 13a7 7 0 0 1-7 7H15.1a7 7 0 0 1-6.9-7v-1H68v1zm5.2-5.3c0 .7-.6 1.3-1.3 1.3H4.3c-.7 0-1.3-.6-1.3-1.3v-3.4c0-.7.6-1.3 1.3-1.3h67.6c.7 0 1.3.6 1.3 1.3v3.4zM16.2 37.9l5.4 4 5.5-4 5.5 4 5.5-4 5.4 4 5.5-4 5.5 4 5.5-4 5.5 4 6.3-4.7-1.7-2.4-4.6 3.3-5.5-4-5.5 4-5.5-4-5.5 4-5.4-4-5.5 4-5.5-4-5.5 4-5.4-4-5.5 4L6 34.8l-1.8 2.4 6.4 4.7zM70.9 31v-3C70.2 12.6 55.8 0 38.1 0 20.4 0 5.9 12.5 5.2 28v3H71zM38 3c16 0 29.1 11.2 29.8 25H8.2C9 14.3 22.1 3 38.1 3z"/>
+    				<circle cx="38.1" cy="15" r="2"/>
+    				<circle cx="30.1" cy="10.1" r="2"/>
+    				<circle cx="46.1" cy="10.1" r="2"/>
+					</svg>
 				</div>
 			</div>
-			<div class="reazons__item  reazons__item--blue">
+			
+
+			<div class="reazons__item  reazons__item--blue reazons__item--second">
 				<h2 class="reazons__title reazons__title--white">Там есть мост дьявола</h2>
 				<span class="reazons__number">№2</span>
-				<p>Да, по нему можно пройти! Если<br>конечно вы осмелитесь</p>
-				<img src="photo-city@1x.png" alt="" width="320" height="260">
+				<p class="reazons__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 			</div>
+
+
 			<div class="reazons__item  reazons__item--gray  reazons__item--bottom-line">
 				<h2 class="reazons__title reazons__title--black">Небольшая площадь</h2>
 				<span class="reazons__number">№3</span>
-				<p>Все достопримечательности<br>находятся очень близко</p>
+				<p class="reazons__text">Все достопримеча&shy;тельности находятся очень близко</p>
 			</div>
+
+
 			<div class="reazons__item  reazons__item--gray  reazons__item--bottom-line">
 				<h2 class="reazons__title reazons__title--black">Красивая дорога</h2>
 				<span class="reazons__number">№4</span>
-				<p>Ехать в Седону изз Лас-Вегаса<br>совсем не скучно</p>
+				<p class="reazons__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
 			</div>
+
+
 			<div class="reazons__item  reazons__item--gray">
 				<h2 class="reazons__title reazons__title--black">Мало туристов</h2>
 				<span class="reazons__number">№5</span>
-				<p>Большинство едет в гранд каньон<br>и толпится там</p>
+				<p class="reazons__text">Большинство едет в гранд каньон и толпится там</p>
 			</div>
+
+
 		</section>
 		<section class="hotel-search">
 			<h1 class="visually-hidden">Поиск  гостиниц</h1>
 			<b class="hotel-search__title">Заинтерисовались?</b>
 			<p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			<a class="btn" href="#" >Найти гостиницу</a>
-		  <div class="hotel-search__map">
-		   <img src="../sedona/map-mobile.jpg" alt="" width="320" height="350">
-		  </div>
 		</section>
 	</main>
 	<footer class="page-footer">
