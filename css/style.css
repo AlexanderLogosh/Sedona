@@ -102,7 +102,7 @@ body {
       background-image: url(../img/logo-sedona-tablet.svg); } }
   @media (min-width: 1200px) {
     .main-nav::before {
-      left: 482px;
+      left: 505px;
       width: 188px;
       height: 96px;
       background-image: url(../img/logo-sedona-desktop.svg); } }
@@ -222,24 +222,63 @@ body {
         line-height: 26px; } }
 
 .page-footer {
-  padding-top: 32px;
-  text-align: center; }
+  padding-top: 35px;
+  text-align: center;
+  font-size: 0; }
+  .page-footer::after {
+    content: '';
+    display: table;
+    clear: both; }
 
 .page-footer__teg {
   display: inline-block;
-  margin-bottom: 22px;
-  font-size: 21px;
+  margin-bottom: 36px;
+  letter-spacing: -0.04em;
+  font-size: 20px;
   line-height: 26px;
   color: black;
   font-weight: bold; }
 
 .page-footer__coopyright {
+  position: relative;
+  display: inline-block;
   padding-top: 43px;
   padding-bottom: 20px;
+  padding-right: 35px;
+  width: 140px;
   font-size: 14px;
   line-height: 26px;
   color: black;
   font-weight: 400; }
+  .page-footer__coopyright svg {
+    position: absolute;
+    top: 40px;
+    right: 23px; }
+
+@media (min-width: 768px) {
+  .page-footer__teg {
+    float: left;
+    margin-top: 10px;
+    margin-left: 62px;
+    margin-right: 109px; }
+  .social-btns {
+    float: left; }
+  .page-footer__coopyright {
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 68px; }
+    .page-footer__coopyright svg {
+      position: absolute;
+      top: 8px;
+      right: 50px; } }
+
+@media (min-width: 1200px) {
+  .page-footer__teg {
+    margin-left: 133px;
+    margin-right: 253px; }
+  .page-footer__coopyright {
+    margin-right: -4px; } }
 
 .page-header {
   position: relative;
@@ -589,15 +628,29 @@ body {
   text-align: center; }
 
 .social-btns__item {
+  position: relative;
   display: inline-block;
   margin: 0;
-  margin-right: 6px;
-  width: 46px;
+  margin-right: 5px;
+  width: 47px;
   height: 48px;
   font-size: 0;
   background: #81b3d2; }
+  .social-btns__item svg {
+    position: absolute;
+    fill: white; }
 
-.social-btns__item--youtube {
+.social-btns__item--twiter svg {
+  left: 16px;
+  top: 17px; }
+
+.social-btns__item--facebook svg {
+  left: 19px;
+  top: 14px; }
+
+.social-btns__item--youtube svg {
+  left: 14px;
+  top: 17px;
   margin-right: 0; }
 
 .video {

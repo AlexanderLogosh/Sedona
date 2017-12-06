@@ -1,13 +1,31 @@
 .social-btns__item {
+	position: relative;
 	display: inline-block;
 	margin: 0;
-	margin-right: 6px;
-	width: 46px;
+	margin-right: 5px;
+	width: 47px;
 	height: 48px;
 	font-size: 0;
 	background: $bg-blue;
+
+	svg {
+		position: absolute;
+		fill: white;
+	}
 }
 
-.social-btns__item--youtube {
+.social-btns__item--twiter svg {
+	left: 16px;
+	top: 17px;
+}
+
+.social-btns__item--facebook svg {
+	left: 19px;
+	top: 14px;
+}
+
+.social-btns__item--youtube svg {
+	left: 14px;
+	top: 17px;
 	margin-right: 0;
 }
