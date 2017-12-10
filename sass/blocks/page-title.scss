@@ -2,7 +2,6 @@
 	text-align: center;
 	padding-top: 38px;
 	padding-bottom: 26px;
-  @include clearfix;
 
 	h1 {
 		margin: 0;
@@ -28,6 +27,34 @@
 	}
 }
  
+ .page-title--inner {
+	padding-top: 38px;
+	padding-bottom: 18px;
+
+	h1 {
+		margin-bottom: 26px;
+	}
+
+	p {
+		line-height: 24px;
+	}
+
+	@media (min-width: 768px) {
+		padding: 76px 135px;
+
+		h1 {
+			margin-bottom: 29px;
+			@include fonts-rules(30px, 26px, black, bold);
+		}
+	}
+
+	@media (min-width: 1200px) {
+		padding: 112px 350px;
+		padding-bottom: 40px;		
+	}
+}
+
+
  @media (max-width: 768px) {
 	.page-title--main::after {
 		content: "";
