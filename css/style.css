@@ -704,35 +704,36 @@ body {
   .review-form__name .review-form__first-name {
     width: 229px; }
 
-.review-form__contacts legend {
-  padding-left: 10px;
-  padding-bottom: 20px; }
-
-.review-form__contacts span {
-  display: inline-block;
-  margin: 0;
-  padding: 0 21px 7px;
-  padding-left: 38px;
-  font-size: 14px;
-  line-height: 26px;
-  color: #333333;
-  font-weight: 400; }
-
-.review-form__contacts input {
-  margin-left: 20px;
-  width: 280px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-.review-form__contacts .review-form__error--tel {
-  padding: 0;
-  padding-top: 12px;
-  padding-left: 38px;
-  text-transform: none;
-  font-size: 13px;
-  line-height: 14px;
-  color: #ff5c5c;
-  font-weight: 400; }
+.review-form .review-form__contacts {
+  display: block;
+  padding-bottom: 28px; }
+  .review-form .review-form__contacts legend {
+    padding-left: 10px;
+    padding-bottom: 20px; }
+  .review-form .review-form__contacts span {
+    display: inline-block;
+    margin: 0;
+    padding: 0 21px 7px;
+    padding-left: 38px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    font-weight: 400; }
+  .review-form .review-form__contacts input {
+    margin-left: 20px;
+    width: 280px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .review-form .review-form__contacts .review-form__error--tel {
+    padding: 0;
+    padding-top: 12px;
+    padding-left: 38px;
+    margin-bottom: 17px;
+    text-transform: none;
+    font-size: 13px;
+    line-height: 14px;
+    color: #ff5c5c;
+    font-weight: 400; }
 
 .review-form__experience,
 .review-form__places {

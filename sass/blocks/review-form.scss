@@ -59,7 +59,10 @@
 }
 
 
-.review-form__contacts {
+.review-form .review-form__contacts {
+	display: block;
+	padding-bottom: 28px;
+
 	legend {
 		padding-left: 10px;
 		padding-bottom: 20px;
@@ -83,6 +86,7 @@
 		padding: 0;
 		padding-top: 12px;
 		padding-left: 38px;
+		margin-bottom: 17px;
 		text-transform: none;
 		@include fonts-rules(13px, 14px, #ff5c5c, 400);
 	}
